@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./node_modules/basiclightbox/dist/basicLightbox.min.css">
+    <!-- <script src="dist/basicLightbox.min.js"></script> -->
+    <title>Document</title>
+    <style>
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        p,h1,h2,h3,h4,h5,h6{
+            margin: 0;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button{
+            border: none;
+            cursor: pointer;
+        }
+
+        address{
+            font-style: normal;
+        }
+
+        img{
+            display: block;
+            width: 400px;
+            height: 600px;
+        }
+
+        .container{
+            padding: 0 15px 0 15px;
+            margin: 0 auto;
+        }
+
+        .gallery-list{
+            margin: 20px auto 20px auto; 
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 2000px;
+            gap: 15px;
+        }
+
+        .modal-btn{
+            opacity: 0;
+            z-index: 9999;
+        }
+
+        .visible{
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="gallery-list">
+            <li class="gallery-list-item"><img class="gallery-list-img lightbox-trigger" src="" data-source="" alt=""></li>
+            <li class="gallery-list-item"><img class="gallery-list-img lightbox-trigger" src="" data-source="" alt=""></li>
+            <li class="gallery-list-item"><img class="gallery-list-img lightbox-trigger" src="" data-source="" alt=""></li>
+            <li class="gallery-list-item"><img class="gallery-list-img lightbox-trigger" src="" data-source="" alt=""></li>
+            <li class="gallery-list-item"><img class="gallery-list-img lightbox-trigger" src="" data-source="" alt=""></li>
+            <li class="gallery-list-item"><img class="gallery-list-img lightbox-trigger" src="" data-source="" alt=""></li>
+            <li class="gallery-list-item"><img class="gallery-list-img lightbox-trigger" src="" data-source="" alt=""></li>
+            <li class="gallery-list-item"><img class="gallery-list-img lightbox-trigger" src="" data-source="" alt=""></li>
+            <li class="gallery-list-item"><img class="gallery-list-img lightbox-trigger" src="" data-source="" alt=""></li>
+            <li class="gallery-list-item"><img class="gallery-list-img lightbox-trigger" src="" data-source="" alt=""></li>
+        </ul>
+        <button class="modal-btn" button[data-action="close-lightbox"] style="background-color: inherit; padding: 0; width: 40px; height: 40px; position: fixed; top: 25px; right: 25px;">
+            <a style="background-color: black;width: 40px; height:40px; border-radius: 50%; display: flex; justify-content: center; align-items: center;" href="">
+                <svg width="30" height="30" viewBox="0 0 32 32">
+                    <path fill="white" d="M26.667 7.303l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
+                </svg>
+            </a>
+        </button>
+    </div>
+    <script src="./node_modules/basiclightbox/dist/basicLightbox.min.js"></script>
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>

@@ -126,4 +126,3 @@ document.addEventListener("keydown", (e) => {
         createdImg.src = galleryItems[newInd].preview;
     }
 });
-
